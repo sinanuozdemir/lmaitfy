@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Let Me ChatGPT That For You…</title>
+    <meta name="description" content="Generate a shareable link that opens ChatGPT with a prefilled question. Let Me ChatGPT That For You (LMCTFY)." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1 class="brand">ChatGPT</h1>
+        <p class="tagline">Let Me ChatGPT That For You…</p>
+      </header>
+
+      <section class="search">
+        <div class="search-input">
+          <input id="query" type="text" placeholder="Type a question…" aria-label="question" />
+        </div>
+        <div class="actions">
+          <button id="open-btn" class="btn primary" aria-label="Open in ChatGPT">Open in ChatGPT</button>
+          <button id="link-btn" class="btn" aria-label="Create Share Link">Create Share Link</button>
+        </div>
+      </section>
+
+      <section id="share" class="share hidden" aria-live="polite">
+        <div class="share-banner">All done! Share the link below.</div>
+        <div class="share-row">
+          <input id="share-url" class="share-input" type="text" readonly />
+        </div>
+        <div class="share-actions">
+          <button id="copy-btn" class="btn secondary">Copy URL</button>
+          <button id="preview-btn" class="btn">Preview</button>
+          <button id="shorten-btn" class="btn subtle">Shorten</button>
+        </div>
+        <div class="share-icons">
+          <span>Share this Search:</span>
+          <a id="tw-share" class="icon" href="#" target="_blank" rel="noopener">Twitter</a>
+          <a id="rd-share" class="icon" href="#" target="_blank" rel="noopener">Reddit</a>
+          <a id="fb-share" class="icon" href="#" target="_blank" rel="noopener">Facebook</a>
+          <a id="ln-share" class="icon" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="legal">Not associated with OpenAI in any way. ChatGPT is a product of OpenAI.</p>
+        <p class="credit">2010–2025 – Made with light sarcasm.</p>
+      </footer>
+    </main>
+
+    <template id="toast-template">
+      <div class="toast" role="status"></div>
+    </template>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
+
+
